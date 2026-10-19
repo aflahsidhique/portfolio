@@ -1,0 +1,23 @@
+# Aflah Sidhique MK
+
+> Aflah Sidhique MK is a full-stack developer in Kerala, India, building responsive web applications with React, Next.js, Node.js, GraphQL and PostgreSQL.
+
+This is the official portfolio of Aflah Sidhique MK, based in Kerala, India. The summaries below describe the same experience and projects shown on the website.
+
+## Portfolio
+
+- [Homepage](https://www.aflahsidhique.in/): biography, selected work, experience and contact.
+- [Full text](https://www.aflahsidhique.in/llms-full.txt): complete plain-text portfolio summary.
+- [Selected work](https://www.aflahsidhique.in/#work): engineering job portal, fleet platform and NILA application.
+- [Questions and answers](https://www.aflahsidhique.in/#faq): identity, technologies, projects and contact.
+- [Résumé](https://www.aflahsidhique.in/aflah-sidhique-resume.pdf): downloadable PDF.
+
+## Profiles and contact
+
+- [GitHub](https://github.com/aflahsidhique): development profile.
+- [LinkedIn](https://www.linkedin.com/in/aflahsidhique/): professional profile.
+- [Email](mailto:aflahsidhique@gmail.com): project and opportunity enquiries.
+
+## Optional
+
+- [Sitemap](https://www.aflahsidhique.in/sitemap.xml): canonical indexable page.

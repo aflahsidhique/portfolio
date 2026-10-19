@@ -1,0 +1,84 @@
+# Aflah Sidhique MK
+
+> Aflah Sidhique MK is a full-stack developer in Kerala, India, building responsive web applications with React, Next.js, Node.js, GraphQL and PostgreSQL.
+
+## Profile
+
+- Name: Aflah Sidhique MK (also known as Aflah Sidhique)
+- Role: Full-stack developer
+- Location: Kerala, India
+- Website: https://www.aflahsidhique.in/
+- Email: aflahsidhique@gmail.com
+- GitHub: https://github.com/aflahsidhique
+- LinkedIn: https://www.linkedin.com/in/aflahsidhique/
+- Résumé: https://www.aflahsidhique.in/aflah-sidhique-resume.pdf
+
+## Development
+
+Aflah builds responsive frontends, APIs, database models and integrations. His toolkit includes React, Next.js, TypeScript, Node.js, GraphQL, PostgreSQL, MongoDB, Docker, Redis.
+
+## Selected work
+
+The project previews on the portfolio are illustrative interface concepts based on Aflah's development experience.
+
+### Core Engineering Job Portal
+
+A specialized job platform connecting mechanical, civil, and electrical engineers with opportunities. Built with dedicated candidate, company, and admin experiences.
+
+Technologies: Next.js, TypeScript, GraphQL, PostgreSQL.
+
+- Role-based dashboards for candidates, recruiters, and administrators.
+- Server-side rendering with Next.js and TypeScript for fast, searchable pages.
+- GraphQL APIs and a PostgreSQL database for job posting, application tracking, and profile management.
+
+### Fleet Management Platform
+
+An operations platform that brings vehicles, drivers, routes, and maintenance into one place, giving teams a clear view of their fleet.
+
+Technologies: React, Node.js, MongoDB, REST APIs.
+
+- Responsive analytics dashboards with live status updates and reporting.
+- GPS tracking integration, trip logs, service reminders, and automated reports.
+- Secure REST APIs, role-based access, and optimized MongoDB schemas.
+
+### NILA Tap-to-Earn Application
+
+A Telegram-integrated application for NILA Token, with interactive tasks, wallet linking, and real-time rewards.
+
+Technologies: Angular, .NET, PostgreSQL, Redis.
+
+- Angular frontend with secure .NET services for authentication and transactions.
+- Reward calculations, wallet linking, and real-time data processing.
+- Redis caching and in-app monetization built for a responsive user experience.
+
+## Experience
+
+- Junior Software Developer, Infinio Technology Solutions, Thrissur, Kerala: February–December 2025.
+- Junior Software Developer, Techfriar Technologies, Infopark, Kochi: June 2024–June 2025.
+- Software Development Trainee, Techfriar Technologies, Infopark, Kochi: August 2023–March 2024.
+
+## Education
+
+Diploma in Computer Engineering, Seethi Sahib Memorial Polytechnic College, Tirur, 2022–2024. CGPA: 8.92.
+
+## Questions and answers
+
+### Who is Aflah Sidhique?
+
+Aflah Sidhique MK is a full-stack developer based in Kerala, India. He builds responsive web applications, APIs, database models and integrations, with experience at Infinio Technology Solutions and Techfriar Technologies.
+
+### Which technologies does Aflah work with?
+
+Aflah works with React, Next.js, TypeScript, Node.js, GraphQL, PostgreSQL, MongoDB, Docker and Redis. His selected projects also include Angular and .NET.
+
+### What projects has Aflah worked on?
+
+Selected work includes a Core Engineering Job Portal for candidates and recruiters, a Fleet Management Platform for vehicles and operations, and the Telegram-integrated NILA Tap-to-Earn Application. The portfolio previews are illustrative interface concepts based on his development experience.
+
+### How can I contact Aflah or view his résumé?
+
+Email aflahsidhique@gmail.com to discuss a project or opportunity. You can download his résumé from this portfolio and find his profiles on GitHub and LinkedIn.
+
+## Contact
+
+Email aflahsidhique@gmail.com to discuss a project, opportunity or conversation.

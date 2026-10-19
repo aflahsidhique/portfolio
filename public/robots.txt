@@ -1,0 +1,5 @@
+# Public portfolio: allow search and AI crawlers that honor robots.txt.
+User-agent: *
+Allow: /
+
+Sitemap: https://www.aflahsidhique.in/sitemap.xml
