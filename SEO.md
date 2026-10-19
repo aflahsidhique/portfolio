@@ -38,21 +38,43 @@ Check that HTTP and non-www domain variants redirect to the preferred HTTPS www 
 
 These account submissions and external profile edits have not been performed by the repository changes.
 
+## Priorities from your Google results
+
+Live checks on **19 October 2026 (Asia/Calcutta)** found the www homepage, robots.txt, sitemap and llms.txt responding with HTTP 200. The homepage already serves prerendered content, an index/follow directive and the correct www canonical.
+
+1. **Fix the bare domain.** `http://aflahsidhique.in/` returned HTTP 409 and HTTPS failed the TLS handshake from the audit environment. DNS returned A records `216.24.57.1` and `216.198.79.1`. Check the domain's required values in Vercel Project Settings → Domains, correct the DNS/certificate configuration and redirect it to `https://www.aflahsidhique.in/`. Use the values Vercel shows for this project; do not change records solely from this observation. HTTP www already redirects to HTTPS www. [Vercel domain setup](https://vercel.com/docs/domains/set-up-custom-domain), [redirects](https://vercel.com/docs/domains/working-with-domains/deploying-and-redirecting)
+2. **Check Google's index directly.** In Search Console, inspect `https://www.aflahsidhique.in/`, test the live URL, check Google's selected canonical and any exclusion reason, then request indexing after fixes. Submit `https://www.aflahsidhique.in/sitemap.xml`. A missing result in the screenshot or a `site:` search alone does not establish indexing status. [URL Inspection documentation](https://support.google.com/webmasters/answer/9012289?hl=en)
+3. **Align your identity.** Keep “Aflah Sidhique MK” / “Aflah Sidhique”, Kerala and your website consistent across profiles. Your confirmed current roles are Chief Technology Officer at Greeny Rewards (full-time, June 2026–present) and freelance Full Stack Developer at Axio Flux Technologies (March 2026–present). Deploy the updated portfolio and keep your résumé and external profiles consistent with these roles. Refresh any outdated student descriptions. Review your older [LinkedIn account](https://www.linkedin.com/in/aflah-sidhique-85713518b/) and consolidate or update it if outdated.
+4. **Review the closed business listing carefully.** Reopen it only if it represents the same legitimate, currently operating business and the closure label is wrong. Google says not to reopen a listing closed because of a location or name change. [Google reopening guidance](https://support.google.com/business/answer/15300571?hl=en)
+
 ## Build real backlinks
 
-Backlinks exist on other websites; adding files or outbound links here cannot create them.
+Backlinks must point **from another website to this portfolio**. The local profile links and `sameAs` entries help identify you; they do not create those incoming links. No external account updates or Search Console submissions have been performed, and no account integration is connected for these edits.
 
-- Set the GitHub profile website to the production URL. Replace the repository About section's obsolete Vercel deployment URL with it.
-- The repository README includes a portfolio link, which becomes public when pushed. Add a relevant link to the GitHub profile README as well.
-- Add the portfolio to LinkedIn contact information and Featured, and any other professional profiles you actually use.
-- Publish useful project case studies with the problem, your contribution, implementation choices and verifiable results. With permission, ask collaborators or organizations to credit your contribution with a relevant link.
-- Avoid purchased links, bulk directory submissions and automated comment spam. [Google link spam policy](https://developers.google.com/search/docs/essentials/spam-policies#link-spam)
+| Your profile | Add or update |
+| --- | --- |
+| [GitHub](https://github.com/aflahsidhique) | The Website field is empty: set it to the production URL. Add the link below to your existing [profile README](https://github.com/aflahsidhique/aflahsidhique/blob/main/README.md). The portfolio repository's About website is already correct. |
+| [LinkedIn](https://www.linkedin.com/in/aflahsidhique/) | Add the portfolio in Contact info and Featured with a short description. Optionally add a relevant portfolio/project link to your [NodeSweep post](https://www.linkedin.com/posts/aflahsidhique_nodesweep-nodejs-npm-activity-7512872205454815234-vBYa) where it helps readers. |
+| [Instagram](https://www.instagram.com/aflahsidhique/) | Add the URL through Edit profile → Links. Your GitHub profile links to `/aflah_sidhique`, while your confirmed profile is `/aflahsidhique`; make that reference consistent. |
+| [Facebook](https://www.facebook.com/aflah.sidhique) | Add the portfolio to your profile's website/contact details. |
+| [HackerOne](https://hackerone.com/psychojan) | Add the portfolio to the website field if offered, or a relevant public biography field. |
 
-Ready-to-paste profile README link:
+[GitHub profile README instructions](https://docs.github.com/en/account-and-profile/how-tos/profile-customization/managing-your-profile-readme). AeroLeads and Facebook's generic people-search result are not owned profile backlink fields; do not copy every result into your site.
+
+Ready-to-paste biography and README link:
+
+```text
+Aflah Sidhique MK is a full-stack developer based in Kerala, India, Chief Technology Officer at Greeny Rewards and a freelance Full Stack Developer at Axio Flux Technologies.
+Explore my projects and experience: https://www.aflahsidhique.in/
+```
 
 ```markdown
 [Explore my portfolio and projects](https://www.aflahsidhique.in/)
 ```
+
+Publish useful project case studies with your contribution and verifiable results, then seek relevant credits from collaborators with their permission. Avoid purchased links, bulk directories and automated comment spam. [Google link spam policy](https://developers.google.com/search/docs/essentials/spam-policies#link-spam)
+
+These steps can improve discovery and identity consistency, but cannot guarantee a #1 position. Monitor impressions, clicks and position for “aflah sidhique” and name variants in Search Console over the following weeks. [Google SEO guidance](https://developers.google.com/search/docs/fundamentals/seo-starter-guide)
 
 ## AEO and GEO expectations
 

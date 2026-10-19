@@ -1,5 +1,5 @@
 import { loadEnv } from 'vite';
-import { site, toolkit, projects, faqs } from '../site.config.mjs';
+import { site, toolkit, projects, faqs, profiles, roles } from '../site.config.mjs';
 
 export function getSiteUrl(mode = 'production') {
   const env = { ...loadEnv(mode, process.cwd(), ''), ...process.env };
@@ -19,9 +19,10 @@ function structuredData(url) {
     '@graph': [
       {
         '@type': 'Person', '@id': personId, name: site.name, alternateName: site.shortName,
-        url, jobTitle: 'Full-Stack Developer', description: site.description,
-        email: `mailto:${site.email}`, sameAs: [site.github, site.linkedin],
+        url, jobTitle: 'Chief Technology Officer and Full-Stack Developer', description: site.description,
+        email: `mailto:${site.email}`, sameAs: profiles.map(profile => profile.url),
         homeLocation: { '@type': 'Place', name: site.location }, knowsAbout: toolkit,
+        worksFor: roles.filter(role => role.current).map(role => ({ '@type': 'Organization', name: role.company, url: role.companyUrl })),
         alumniOf: { '@type': 'CollegeOrUniversity', name: 'Seethi Sahib Memorial Polytechnic College, Tirur' },
         subjectOf: { '@type': 'DigitalDocument', name: `${site.shortName} résumé`, url: new URL(site.resume, url).href, encodingFormat: 'application/pdf' },
       },
@@ -56,7 +57,7 @@ export function renderSeoHead(url) {
     `<link rel="canonical" href="${escapeHtml(url)}" />`,
     '<link rel="sitemap" type="application/xml" href="/sitemap.xml" />',
     '<link rel="describedby" href="/llms.txt" type="text/plain" />',
-    `<link rel="me" href="${escapeHtml(site.github)}" />`, `<link rel="me" href="${escapeHtml(site.linkedin)}" />`,
+    ...profiles.map(profile => `<link rel="me" href="${escapeHtml(profile.url)}" />`),
     meta('og:type', 'profile', true), meta('og:site_name', `${site.shortName} — Portfolio`, true),
     meta('og:title', site.title, true), meta('og:description', site.description, true),
     meta('og:url', url, true), meta('og:locale', 'en_IN', true),
@@ -69,11 +70,11 @@ export function renderSeoHead(url) {
 }
 
 export function createSeoFiles(url) {
-  const profile = `# ${site.name}\n\n> ${site.description}\n\n## Profile\n\n- Name: ${site.name} (also known as ${site.shortName})\n- Role: Full-stack developer\n- Location: ${site.location}\n- Website: ${url}\n- Email: ${site.email}\n- GitHub: ${site.github}\n- LinkedIn: ${site.linkedin}\n- Résumé: ${new URL(site.resume, url).href}\n\n## Development\n\nAflah builds responsive frontends, APIs, database models and integrations. His toolkit includes ${toolkit.join(', ')}.\n\n## Selected work\n\nThe project previews on the portfolio are illustrative interface concepts based on Aflah's development experience.\n\n${projects.map(project => `### ${project.name}\n\n${project.description}\n\nTechnologies: ${project.tags.join(', ')}.\n\n${project.details.map(detail => `- ${detail}`).join('\n')}`).join('\n\n')}\n\n## Experience\n\n- Junior Software Developer, Infinio Technology Solutions, Thrissur, Kerala: February–December 2025.\n- Junior Software Developer, Techfriar Technologies, Infopark, Kochi: June 2024–June 2025.\n- Software Development Trainee, Techfriar Technologies, Infopark, Kochi: August 2023–March 2024.\n\n## Education\n\nDiploma in Computer Engineering, Seethi Sahib Memorial Polytechnic College, Tirur, 2022–2024. CGPA: 8.92.\n\n## Questions and answers\n\n${faqs.map(({ question, answer }) => `### ${question}\n\n${answer}`).join('\n\n')}\n\n## Contact\n\nEmail ${site.email} to discuss a project, opportunity or conversation.\n`;
+  const profile = `# ${site.name}\n\n> ${site.description}\n\n## Profile\n\n- Name: ${site.name} (also known as ${site.shortName})\n- Roles: Full-stack developer and Chief Technology Officer\n- Location: ${site.location}\n- Website: ${url}\n- Email: ${site.email}\n${profiles.map(profile => `- ${profile.name}: ${profile.url}`).join('\n')}\n- Résumé: ${new URL(site.resume, url).href}\n\n## Development\n\nAflah builds responsive frontends, APIs, database models and integrations. His toolkit includes ${toolkit.join(', ')}.\n\n## Selected work\n\nThe project previews on the portfolio are illustrative interface concepts based on Aflah's development experience.\n\n${projects.map(project => `### ${project.name}\n\n${project.description}\n\nTechnologies: ${project.tags.join(', ')}.\n\n${project.details.map(detail => `- ${detail}`).join('\n')}`).join('\n\n')}\n\n## Experience\n\n${roles.map(role => `- ${role.role}, ${role.company}: ${role.period}. ${role.place}.`).join('\n')}\n\n## Education\n\nDiploma in Computer Engineering, Seethi Sahib Memorial Polytechnic College, Tirur, 2022–2024. CGPA: 8.92.\n\n## Questions and answers\n\n${faqs.map(({ question, answer }) => `### ${question}\n\n${answer}`).join('\n\n')}\n\n## Contact\n\nEmail ${site.email} to discuss a project, opportunity or conversation.\n`;
   return {
     'robots.txt': `# Public portfolio: allow search and AI crawlers that honor robots.txt.\nUser-agent: *\nAllow: /\n\nSitemap: ${url}sitemap.xml\n`,
     'sitemap.xml': `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n  <url>\n    <loc>${escapeHtml(url)}</loc>\n  </url>\n</urlset>\n`,
-    'llms.txt': `# ${site.name}\n\n> ${site.description}\n\nThis is the official portfolio of ${site.name}, based in ${site.location}. The summaries below describe the same experience and projects shown on the website.\n\n## Portfolio\n\n- [Homepage](${url}): biography, selected work, experience and contact.\n- [Full text](${url}llms-full.txt): complete plain-text portfolio summary.\n- [Selected work](${url}#work): engineering job portal, fleet platform and NILA application.\n- [Questions and answers](${url}#faq): identity, technologies, projects and contact.\n- [Résumé](${new URL(site.resume, url).href}): downloadable PDF.\n\n## Profiles and contact\n\n- [GitHub](${site.github}): development profile.\n- [LinkedIn](${site.linkedin}): professional profile.\n- [Email](mailto:${site.email}): project and opportunity enquiries.\n\n## Optional\n\n- [Sitemap](${url}sitemap.xml): canonical indexable page.\n`,
+    'llms.txt': `# ${site.name}\n\n> ${site.description}\n\nThis is the official portfolio of ${site.name}, based in ${site.location}. The summaries below describe the same experience and projects shown on the website.\n\n## Portfolio\n\n- [Homepage](${url}): biography, selected work, experience and contact.\n- [Full text](${url}llms-full.txt): complete plain-text portfolio summary.\n- [Selected work](${url}#work): engineering job portal, fleet platform and NILA application.\n- [Questions and answers](${url}#faq): identity, technologies, projects and contact.\n- [Résumé](${new URL(site.resume, url).href}): downloadable PDF.\n\n## Profiles and contact\n\n${profiles.map(profile => `- [${profile.name}](${profile.url}): public profile.`).join('\n')}\n- [Email](mailto:${site.email}): project and opportunity enquiries.\n\n## Optional\n\n- [Sitemap](${url}sitemap.xml): canonical indexable page.\n`,
     'llms-full.txt': profile,
   };
 }

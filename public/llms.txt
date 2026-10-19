@@ -1,6 +1,6 @@
 # Aflah Sidhique MK
 
-> Aflah Sidhique MK is a full-stack developer in Kerala, India, building responsive web applications with React, Next.js, Node.js, GraphQL and PostgreSQL.
+> Aflah Sidhique MK is a full-stack developer in Kerala, India, CTO at Greeny Rewards and a freelance developer at Axio Flux Technologies.
 
 This is the official portfolio of Aflah Sidhique MK, based in Kerala, India. The summaries below describe the same experience and projects shown on the website.
 
@@ -14,8 +14,12 @@ This is the official portfolio of Aflah Sidhique MK, based in Kerala, India. The
 
 ## Profiles and contact
 
-- [GitHub](https://github.com/aflahsidhique): development profile.
-- [LinkedIn](https://www.linkedin.com/in/aflahsidhique/): professional profile.
+- [GitHub](https://github.com/aflahsidhique): public profile.
+- [LinkedIn](https://www.linkedin.com/in/aflahsidhique/): public profile.
+- [Instagram](https://www.instagram.com/aflahsidhique/): public profile.
+- [Facebook](https://www.facebook.com/aflah.sidhique): public profile.
+- [HackerOne](https://hackerone.com/psychojan): public profile.
+- [LinkedIn (earlier profile)](https://www.linkedin.com/in/aflah-sidhique-85713518b/): public profile.
 - [Email](mailto:aflahsidhique@gmail.com): project and opportunity enquiries.
 
 ## Optional

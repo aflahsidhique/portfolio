@@ -1,21 +1,25 @@
 # Aflah Sidhique MK
 
-> Aflah Sidhique MK is a full-stack developer in Kerala, India, building responsive web applications with React, Next.js, Node.js, GraphQL and PostgreSQL.
+> Aflah Sidhique MK is a full-stack developer in Kerala, India, CTO at Greeny Rewards and a freelance developer at Axio Flux Technologies.
 
 ## Profile
 
 - Name: Aflah Sidhique MK (also known as Aflah Sidhique)
-- Role: Full-stack developer
+- Roles: Full-stack developer and Chief Technology Officer
 - Location: Kerala, India
 - Website: https://www.aflahsidhique.in/
 - Email: aflahsidhique@gmail.com
 - GitHub: https://github.com/aflahsidhique
 - LinkedIn: https://www.linkedin.com/in/aflahsidhique/
+- Instagram: https://www.instagram.com/aflahsidhique/
+- Facebook: https://www.facebook.com/aflah.sidhique
+- HackerOne: https://hackerone.com/psychojan
+- LinkedIn (earlier profile): https://www.linkedin.com/in/aflah-sidhique-85713518b/
 - Résumé: https://www.aflahsidhique.in/aflah-sidhique-resume.pdf
 
 ## Development
 
-Aflah builds responsive frontends, APIs, database models and integrations. His toolkit includes React, Next.js, TypeScript, Node.js, GraphQL, PostgreSQL, MongoDB, Docker, Redis.
+Aflah builds responsive frontends, APIs, database models and integrations. His toolkit includes React, Next.js, TypeScript, Node.js, Express.js, Flutter, GraphQL, PostgreSQL, MongoDB, Docker, Redis.
 
 ## Selected work
 
@@ -53,9 +57,11 @@ Technologies: Angular, .NET, PostgreSQL, Redis.
 
 ## Experience
 
-- Junior Software Developer, Infinio Technology Solutions, Thrissur, Kerala: February–December 2025.
-- Junior Software Developer, Techfriar Technologies, Infopark, Kochi: June 2024–June 2025.
-- Software Development Trainee, Techfriar Technologies, Infopark, Kochi: August 2023–March 2024.
+- Chief Technology Officer, Greeny Rewards: JUN 2026 — PRESENT. Ernakulam, Kerala · Hybrid.
+- Full-Stack Developer · Freelance, Axio Flux Technologies: MAR 2026 — PRESENT. Kozhikode, Kerala · Remote.
+- Junior Software Developer, Infinio Technology Solutions: FEB — DEC 2025. Thrissur, Kerala.
+- Junior Software Developer, Techfriar Technologies: JUN 2024 — JUN 2025. Infopark, Kochi.
+- Software Development Trainee, Techfriar Technologies: AUG 2023 — MAR 2024. Infopark, Kochi.
 
 ## Education
 
@@ -65,11 +71,11 @@ Diploma in Computer Engineering, Seethi Sahib Memorial Polytechnic College, Tiru
 
 ### Who is Aflah Sidhique?
 
-Aflah Sidhique MK is a full-stack developer based in Kerala, India. He builds responsive web applications, APIs, database models and integrations, with experience at Infinio Technology Solutions and Techfriar Technologies.
+Aflah Sidhique MK is a full-stack developer based in Kerala, India. He is Chief Technology Officer at Greeny Rewards since June 2026 and a freelance Full-Stack Developer at Axio Flux Technologies since March 2026. He previously worked at Infinio Technology Solutions and Techfriar Technologies.
 
 ### Which technologies does Aflah work with?
 
-Aflah works with React, Next.js, TypeScript, Node.js, GraphQL, PostgreSQL, MongoDB, Docker and Redis. His selected projects also include Angular and .NET.
+Aflah works with React, Next.js, TypeScript, Node.js, Express.js, Flutter, GraphQL, PostgreSQL, MongoDB, Docker and Redis. His selected projects also include Angular and .NET.
 
 ### What projects has Aflah worked on?
 
